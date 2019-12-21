@@ -44,7 +44,12 @@ body {
 
   border-radius: .5rem;
 
-  box-shadow: 0 22px 70px 4px rgba(0, 0, 0, 0.56);
+  box-shadow:
+    0 0.4px 1.4px -15px rgba(0, 0, 0, 0.26),
+    0 1px 3.8px -15px rgba(0, 0, 0, 0.256),
+    0 2.6px 9px -15px rgba(0, 0, 0, 0.24),
+    0 15px 30px -15px rgba(0, 0, 0, 0.5)
+  ;
 
   color: black;
 
@@ -56,7 +61,6 @@ body {
 
 .card:hover {
   transform: scale(1.1);
-  box-shadow: 0 32px 80px 14px rgba(0, 0, 0, 0.36);
 }
 
 .card-details {
