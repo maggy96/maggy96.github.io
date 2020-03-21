@@ -52,15 +52,7 @@ body {
   ;
 
   color: black;
-
   align-items: center;
-
-  will-change: transform;
-  transition: transform 0.25s cubic-bezier(0.4, 0.0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
-}
-
-.card:hover {
-  transform: scale(1.1);
 }
 
 .card-details {
@@ -69,11 +61,6 @@ body {
 
 .name {
   font-size: 2rem;
-}
-
-.occupation {
-  font-weight: 600;
-  color: var(--primary);
 }
 
 .bio {
