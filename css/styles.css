@@ -1,90 +1,57 @@
-* {
-  box-sizing: border-box;
-}
-
 :root {
-  --background: white;
-  --primary: #0984e3;
-  --card-size: 300px;
+  --background: #FFFDEE;
+  --primary: #12130F;
+  --secondary: #E94F37;
 }
 
-a:link{
-  color: black;
-}
-
-a:visited{
-  color: black;
-}
-
-a:hover {
-  color: var(--primary);
-}
-
-a:active {
-  color: var(--primary);
-}
-
-body {
-  height: 100vh;
+body,
+html {
+  height: 100%;
+  width: 100%;
   margin: 0;
+  padding: 0;
+  font-size: 40%;
+}
+@media screen and (min-width: 30em) {
+  html {
+    font-size: 100%;
+  }
+}
+
+.container {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background: var(--background);
-  font-family: 'Roboto', sans-serif;
-
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.card {
-  width: calc(var(--card-size));
-  height: calc(var(--card-size) * 1.61);
-
-  border-radius: .5rem;
-
-  box-shadow:
-    0 0.4px 1.4px -15px rgba(0, 0, 0, 0.26),
-    0 1px 3.8px -15px rgba(0, 0, 0, 0.256),
-    0 2.6px 9px -15px rgba(0, 0, 0, 0.24),
-    0 15px 30px -15px rgba(0, 0, 0, 0.5)
-  ;
-
-  color: black;
-  align-items: center;
-}
-
-.card-details {
-  padding: 1rem 2rem;
-}
-
-.name {
-  font-size: 2rem;
-}
-
 .bio {
-  border-radius: .5rem .5rem 0 0;
-  height: 100%;
-  width: 100%;
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  filter: contrast(1.1);
+  box-shadow: inset 0 0 0 .5rem var(--primary);
+  border: .5rem solid var(--secondary);
 }
 
-.card-about {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.headline {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--secondary);
+  font-size: 10rem;;
+  margin: 2rem;
+  text-align: center;
 }
 
-.item {
-  display: flex;
-  padding: 0 2rem;
-  flex-direction: column;
-  margin-bottom: 0.5rem;
-}
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  margin-top: 0.75rem;
+.subline {
+  font-family: 'Yrsa', serif;
+  font-size: 2rem;;
+  width: 25%;
+  display: none;  
 }
