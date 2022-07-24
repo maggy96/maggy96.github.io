@@ -15,9 +15,16 @@ html {
   background-image: url('https://media.giphy.com/media/10DnwPMOWFxn7G/giphy.gif');
   background-size: cover;
   color: #fff;
-  font-size: 96px;
+  font-size: 36px;
   letter-spacing: -7px; 
   font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+}
+
+@media screen and (min-width: 30em) {
+  body,
+  html {
+    font-size: 96px;
+  }
 }
 
 div{
